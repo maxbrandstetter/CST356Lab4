@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Lab 4: Register</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="top">
+                <div class="nav-content">
+                    <span>Lab 4</span>
+                    <a href="home.html">Home</a>
+                    <a href="help.html">Help</a>
+                </div>
+            </nav>
+        </header>
+
+        <h2>Register</h2>
+
+        <div class="form-content">
+            <label for="FirstName">First Name</label>
+            <input type="text" name="FirstName" id="fname" value="">
+        </div>
+        <div class="form-content">
+            <label for="LastName">Last Name</label>
+            <input type="text" name="LastName" id="lname" value="">
+        </div>
+        <div class="form-content">
+            <label for="Age">Age</label>
+            <input type="number" name="Age" min="0" id="age" value="">
+        </div>
+        <div class="form-content">
+            <label for="SchoolYear">School Year <br> </label>
+            <input type="radio" name="SchoolYear" value="Freshman"> Freshman <br>
+            <input type="radio" name="SchoolYear" value="Sophomore"> Sophomore <br>
+            <input type="radio" name="SchoolYear" value="Junior"> Junior <br>
+            <input type="radio" name="SchoolYear" value="Senior"> Senior <br>
+        </div>
+        <div class="form-content">
+            <button type="submit" onclick="submit();">Submit</button>
+        </div>
+        <br>
+        <div class="results">
+            First Name: <span id="firstnamespan"></span> <br>
+            Last Name: <span id="lastnamespan"></span> <br>
+            Age: <span id="agespan"></span> <br><br>
+        </div>
+
+        <footer>
+            &copy;2016
+        </footer>
+    </body>
+</html>
